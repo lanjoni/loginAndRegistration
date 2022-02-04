@@ -1,0 +1,88 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="João Augusto">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/> 
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <link href="css/cssAccount.css" rel="stylesheet" type="text/css"/>
+    <script>
+        function alerta(){
+            alert("Error!");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row bloco">
+            <center>
+                <h1 id="create">
+                Create an account
+                </h1>
+            </center>
+            <div class="col-md-6 b1">
+                <h6>
+                    Your name:
+                </h6>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Complete name" aria-label="Name" aria-describedby="basic-addon1">
+                </div>
+                <h6>
+                    Birth date:
+                </h6>
+                <div class="input-group mb-3">
+                    <input type="date" class="form-control" placeholder="Birth date" aria-label="Birth date" aria-describedby="basic-addon1">
+                </div>
+                <h6>
+                    Type your password:
+                </h6>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Your password" aria-label="Password" aria-describedby="basic-addon1">
+                </div>
+                <label id="alert">
+                    <b>ALERT! </b><br/>
+                    Your password must contain at least one special character or one capital letter.
+                </label>
+            </div>
+            <div class="col-md-6 b2">
+                <h6>
+                    Choose a username:
+                </h6>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <h6>
+                    Your e-mail:
+                </h6>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="user@example.com" aria-label="E-mail" aria-describedby="basic-addon1">
+                </div>
+                <h6>
+                    Re-entry your password:
+                </h6>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="The same password" aria-label="Password again" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3 thecheck">
+                    <input type="checkbox" aria-label="Password again" aria-describedby="basic-addon1">
+                    <div>
+                        <label class="checkbox"> I agree with the <a href="#">terms of use</a></label>
+                    </div>
+                </div>
+            </div>
+            <div class="botao">
+                <center>
+                    <a><button type="submit" class="btn-lg btn-primary mb-2" onclick="alerta()"
+                    name="createacc" id="btn">Create account</button></a>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
