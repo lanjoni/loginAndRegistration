@@ -1,0 +1,74 @@
+body{
+    background-color: #060b16;
+    background-image: linear-gradient(1200deg, #000000, #081942);
+    font-family: montserrat;
+}
+
+@font-face{ 
+    font-family: montserrat;
+     src: url("../font/montserrat.ttf");
+}
+
+.bloco{
+    width: 80%;
+    height: 60%;
+    margin-top: 15%;
+    margin-left: 10%;
+    border-radius: 20px;
+    background-color: ccc;
+    padding: 5%;
+    padding-top: 4%;
+}
+
+#alert{
+    font-size: 85%;
+}
+
+.checkbox{
+    margin-left: 10px;
+    margin-top: -2%;
+}
+
+.thecheck{
+    margin-top: 10%;
+}
+
+.botao{
+    align-items: center;
+    padding-top: 5%;
+    border-radius: 30px;
+}
+
+#btn{
+    border-radius: 30px;
+    width: 70%;
+    background-image: linear-gradient(50deg, #060911, #637bb5);
+    border-style: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 400ms ease;
+}
+
+#btn:hover:before{
+    border-radius: 30px;
+    transition: 0.5s;
+    width: 100%;
+    border-radius: 30px;
+}
+
+#btn:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background-color: ccc;
+    opacity: 0.1;
+    transition: all 2s ease;
+    border-radius: 30px;
+}
+
+.b1, .b2{
+    margin-top: 2%;
+}
